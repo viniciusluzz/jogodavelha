@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+/* 'Bangers', cursive */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F83839;
+}
+
+@keyframes wins {
+    0% {
+        font-size: 0px
+    }
+
+    100% {
+        font-size: 200px
+    }
+}
+
+#containerWins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    font-family: 'Bangers', cursive;
+    color: white;
+}
+
+#containerWins h3,
+.iconWins {
+    margin: 0;
+    padding: 0;
+
+    animation-name: wins;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tryAgain_ {
+
+    from {
+        background-color: #F83839;
+        font-size: 0px;
+        width: 0%;
+        height: 0%;
+    }
+
+    to {
+        background-color: white;
+        color: #F83839;
+        border-radius: 40px;
+        font-size: 50px;
+        width: 27%;
+        height: 8%;
+    }
+}
+
+.tryAgain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #513B41;
+    font-size: 0px;
+    width: 0%;
+    height: 0%;
+
+    animation-name: tryAgain_;
+    animation-duration: 0.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.tryAgain:hover {
+    cursor: pointer;
+    border: #513B41 8px solid;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes tryAgain_tie {
+
+    from {
+        background-color: #F83839;
+        font-size: 0px;
+        width: 0%;
+        height: 0%;
+    }
+
+    to {
+        background-color: white;
+        color: #F83839;
+        border-radius: 40px;
+        font-size: 50px;
+        width: 90%;
+        height: 8%;
+    }
+}
+
+.tryAgain_tie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #513B41;
+    font-size: 0px;
+    width: 0%;
+    height: 0%;
+
+    animation-name: tryAgain_tie;
+    animation-duration: 0.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.tryAgain_tie:hover {
+    cursor: pointer;
+    border: #513B41 8px solid;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-row-gap: 10px;
+
+    height: 100vh;
+}
+
+#back {
+    display: grid;
+    grid-template: auto auto auto / auto auto auto;
+    justify-content: center;
+    align-content: center;
+
+    background-color: #513B41;
+    grid-gap: 20px;
+}
+
+.cube {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F83839;
+    width: 200px;
+    height: 200px;
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 1%;
+
+    font-size: 50px;
+    font-family: 'Bangers', cursive;
+    color: white;
+    width: 100%;
+    height: 20%;
+    background-color: #F83839;
+}
+
+.scoreboardOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 10%;
+    height: 80px;
+    background-color: #513B41;
+    border: 8px solid white;
+    border-radius: 30px;
+}
+
+.scoreboardTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 10%;
+    height: 80px;
+    background-color: #513B41;
+    border: 8px solid #513B41;
+    border-radius: 30px;
+}
+
+.p {
+    font-size: 150px;
+    color: white;
+}
+
+@media screen and (max-width:1440px) {
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    /* 'Bangers', cursive */
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: #F83839;
+    }
+
+    @keyframes wins {
+        0% {
+            font-size: 0px
+        }
+
+        100% {
+            font-size: 200px
+        }
+    }
+
+    #containerWins {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        font-family: 'Bangers', cursive;
+        color: white;
+    }
+
+    #containerWins h3,
+    .iconWins {
+        margin: 0;
+        padding: 0;
+
+        animation-name: wins;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes tryAgain_ {
+
+        from {
+            background-color: #F83839;
+            font-size: 0px;
+            width: 0%;
+            height: 0%;
+        }
+
+        to {
+            background-color: white;
+            color: #F83839;
+            border-radius: 40px;
+            font-size: 50px;
+            width: 27%;
+            height: 8%;
+        }
+    }
+
+    .tryAgain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #513B41;
+        font-size: 0px;
+        width: 0%;
+        height: 0%;
+
+        animation-name: tryAgain_;
+        animation-duration: 0.5s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    .tryAgain:hover {
+        cursor: pointer;
+        border: #513B41 8px solid;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    @keyframes tryAgain_tie {
+
+        from {
+            background-color: #F83839;
+            font-size: 0px;
+            width: 0%;
+            height: 0%;
+        }
+
+        to {
+            background-color: white;
+            color: #F83839;
+            border-radius: 40px;
+            font-size: 50px;
+            width: 90%;
+            height: 8%;
+        }
+    }
+
+    .tryAgain_tie {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #513B41;
+        font-size: 0px;
+        width: 0%;
+        height: 0%;
+
+        animation-name: tryAgain_tie;
+        animation-duration: 0.5s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    .tryAgain_tie:hover {
+        cursor: pointer;
+        border: #513B41 8px solid;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        grid-row-gap: 10px;
+
+        height: 100vh;
+    }
+
+    #back {
+        display: grid;
+        grid-template: auto auto auto / auto auto auto;
+        justify-content: center;
+        align-content: center;
+
+        background-color: #513B41;
+        grid-gap: 18px;
+    }
+
+    .cube {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #F83839;
+        width: 200px;
+        height: 200px;
+    }
+
+    #scoreboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        grid-column-gap: 1%;
+
+        font-size: 50px;
+        font-family: 'Bangers', cursive;
+        color: white;
+        width: 100%;
+        height: 20%;
+        background-color: #F83839;
+    }
+
+    .scoreboardOne {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 10%;
+        height: 80px;
+        background-color: #513B41;
+        border: 8px solid white;
+        border-radius: 30px;
+    }
+
+    .scoreboardTwo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 10%;
+        height: 80px;
+        background-color: #513B41;
+        border: 8px solid #513B41;
+        border-radius: 30px;
+    }
+
+    .p {
+        font-size: 150px;
+        color: white;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+    @keyframes wins {
+        0% {
+            font-size: 0px
+        }
+
+        100% {
+            font-size: 150px
+        }
+    }
+
+    #containerWins {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        font-family: 'Bangers', cursive;
+        color: white;
+    }
+
+    #containerWins h3,
+    .iconWins {
+        margin: 0;
+        padding: 0;
+
+        animation-name: wins;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    
+    @keyframes tryAgain_ {
+
+        from {
+            background-color: #F83839;
+            font-size: 0px;
+            width: 0%;
+            height: 0%;
+        }
+
+        to {
+            background-color: white;
+            color: #F83839;
+            border-radius: 40px;
+            font-size: 35px;
+            width: 27%;
+            height: 8%;
+        }
+    }
+
+    .tryAgain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #513B41;
+        font-size: 0px;
+        width: 0%;
+        height: 0%;
+
+        animation-name: tryAgain_;
+        animation-duration: 0.5s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    .tryAgain:hover {
+        cursor: pointer;
+        border: #513B41 8px solid;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    @keyframes tryAgain_tie {
+
+        from {
+            background-color: #F83839;
+            font-size: 0px;
+            width: 0%;
+            height: 0%;
+        }
+
+        to {
+            background-color: white;
+            color: #F83839;
+            border-radius: 40px;
+            font-size: 38px;
+            width: 90%;
+            height: 8%;
+        }
+    }
+
+    .tryAgain_tie {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #513B41;
+        font-size: 0px;
+        width: 0%;
+        height: 0%;
+
+        animation-name: tryAgain_tie;
+        animation-duration: 0.5s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    .tryAgain_tie:hover {
+        cursor: pointer;
+        border: #513B41 8px solid;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    @keyframes wins {
+        0% {
+            font-size: 0px
+        }
+
+        100% {
+            font-size: 125px
+        }
+    }
+
+    #containerWins {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        font-family: 'Bangers', cursive;
+        color: white;
+    }
+
+    #containerWins h3,
+    .iconWins {
+        margin: 0;
+        padding: 0;
+
+        animation-name: wins;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes tryAgain_ {
+
+        from {
+            background-color: #F83839;
+            font-size: 0px;
+            width: 0%;
+            height: 0%;
+        }
+
+        to {
+            background-color: white;
+            color: #F83839;
+            border-radius: 40px;
+            font-size: 30px;
+            width: 27%;
+            height: 8%;
+        }
+    }
+
+    .tryAgain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #513B41;
+        font-size: 0px;
+        width: 0%;
+        height: 0%;
+
+        animation-name: tryAgain_;
+        animation-duration: 0.5s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    .tryAgain:hover {
+        cursor: pointer;
+        border: #513B41 8px solid;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    /* 'Bangers', cursive */
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: #F83839;
+    }
+
+    @keyframes wins {
+        0% {
+            font-size: 0px
+        }
+
+        100% {
+            font-size: 65px
+        }
+    }
+
+    #containerWins {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        font-family: 'Bangers', cursive;
+        color: white;
+    }
+
+    #containerWins h3,
+    .iconWins {
+        margin: 0;
+        padding: 0;
+
+        animation-name: wins;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes tryAgain_ {
+
+        from {
+            background-color: #F83839;
+            font-size: 0px;
+            width: 0%;
+            height: 0%;
+        }
+
+        to {
+            background-color: white;
+            color: #F83839;
+            border-radius: 40px;
+            font-size: 20px;
+            width: 35%;
+            height: 5%;
+        }
+    }
+
+    .tryAgain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #513B41;
+        font-size: 0px;
+        width: 0%;
+        height: 0%;
+
+        animation-name: tryAgain_;
+        animation-duration: 0.5s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    .tryAgain:hover {
+        cursor: pointer;
+        border: #513B41 8px solid;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    @keyframes tryAgain_tie {
+
+        from {
+            background-color: #F83839;
+            font-size: 0px;
+            width: 0%;
+            height: 0%;
+        }
+
+        to {
+            background-color: white;
+            color: #F83839;
+            border-radius: 40px;
+            font-size: 18px;
+            width: 90%;
+            height: 5%;
+        }
+    }
+
+    .tryAgain_tie {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #513B41;
+        font-size: 0px;
+        width: 0%;
+        height: 0%;
+
+        animation-name: tryAgain_tie;
+        animation-duration: 0.5s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    .tryAgain_tie:hover {
+        cursor: pointer;
+        border: #513B41 8px solid;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        grid-row-gap: 100px;
+
+        height: 100vh;
+    }
+
+    #back {
+        display: grid;
+        grid-template: auto auto auto / auto auto auto;
+        justify-content: center;
+        align-content: center;
+
+        background-color: #513B41;
+        grid-gap: 12px;
+    }
+
+    .cube {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #F83839;
+        width: 100px;
+        height: 100px;
+    }
+
+    #scoreboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        grid-column-gap: 5%;
+
+        font-size: 50px;
+        font-family: 'Bangers', cursive;
+        color: white;
+        width: 100%;
+        height: 20%;
+        background-color: #F83839;
+    }
+
+    .scoreboardOne {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 20%;
+        height: 80px;
+        background-color: #513B41;
+        border: 8px solid white;
+        border-radius: 30px;
+    }
+
+    .scoreboardTwo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 20%;
+        height: 80px;
+        background-color: #513B41;
+        border: 8px solid #513B41;
+        border-radius: 30px;
+    }
+
+    .p {
+        font-size: 80px;
+        color: white;
+    }
+
+}
